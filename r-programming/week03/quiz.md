@@ -16,6 +16,7 @@ A description of the dataset can be found by running
 There will be an object called 'iris' in your workspace. In this dataset, what is the mean of 'Sepal.Length' for the species virginica? (Please only enter the numeric result and nothing else.)
 
 ### Answer
+rounded to the nearest whole number: 7
 
 
 ### Explanation
@@ -52,8 +53,10 @@ How can one calculate the average miles per gallon (mpg) by number of cylinders 
 	with(mtcars, tapply(mpg, cyl, mean))
 
 
-Question 4
+Question 4 
 ----------
+
+<>TODO: figure this out<>
 
 Continuing with the 'mtcars' dataset from the previous Question, what is the absolute difference between the average horsepower of 4-cylinder cars and the average horsepower of 8-cylinder cars?
 
