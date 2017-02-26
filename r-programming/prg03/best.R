@@ -16,7 +16,6 @@ best <- function(state, outcome) {
     valid_outcomes = c("heart attack", "heart failure", "pneumonia")
     if (!( outcome %in% valid_outcomes )) stop("invalid outcome")
     if (!( state %in% data$State )) stop("invalid state")
-    #if (!( outcome %in% valid_outcomes  &  state %in% data$State )) {stop("invalid outcome/state")}
 
     # change data type from character to numeric
     data[, 11] <- as.numeric(data[, 11]) # heart attack
