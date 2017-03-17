@@ -30,11 +30,11 @@ features <- read.table(paste(direcName, "features.txt", sep = "/"));
 features[,2] <- as.character(features[,2]);
 
 #get only the data for mean/std-dev
-grepFeature <- grep(".*mean.*|.*std.*", features[,2])
-grepFeature.names <- features[grepFeature,2]
-grepFeature.names = gsub('-mean', 'Mean', grepFeature.names)
-grepFeature.names = gsub('-std', 'Std', grepFeature.names)
-grepFeature.names <- gsub('[-()]', '', grepFeature.names)
+grepFeature <- grep(".*mean.*|.*std.*", features[,2]);
+grepFeature.names <- features[grepFeature,2];
+grepFeature.names = gsub('-mean', 'Mean', grepFeature.names);
+grepFeature.names = gsub('-std', 'Std', grepFeature.names);
+grepFeature.names <- gsub('[-()]', '', grepFeature.names);
 
 #get the training data
 trainXData <- read.table(paste(direcName,"train/X_train.txt", sep = "/"))[grepFeature];
